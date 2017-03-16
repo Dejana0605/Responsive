@@ -1,0 +1,184 @@
+@mixin main{
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+		color: $lightest;
+	}
+}
+@mixin heading{
+	h1, h2, h3{
+		font-family: $heading_font;
+		font-weight: normal;
+	}
+
+	h2, h3{
+		text-transform: uppercase;
+	}
+}
+@mixin hover-effect{
+
+	&:hover{
+		background: $darkblue;
+	}
+}
+@mixin button-hover{
+	&:hover{
+		background: $lightest;
+		color: $darkblue;
+	}
+}
+@mixin last-hover{
+	&:hover{
+	color: $darkblue;
+	}
+}
+@mixin medium{
+	nav{
+		width: 25%;
+		float: left;
+		height: 60vh;
+
+		.first{
+			font-size: 3em;
+			color: $blue;
+		}
+		li{
+			padding: 0.2em 0;
+		}
+	}
+	.imagebig{
+		height: 60vh;
+		background-image: url("../slike/main_background.jpeg");
+		background-size: cover;
+		.main{
+			width: 100%;
+			h1{
+				padding-top: 7%;
+				padding-left: 45%;
+			}
+			p{
+				padding-left: 52%;
+			}
+		}
+	}
+	.projects{
+		height: 95vh;
+
+			h2{
+				width: 20%;
+				}
+			.view{
+				height: 80vh;
+				padding: 0.5em;
+				margin: 4em;
+			
+			.image1, .image2, .image3, .image4, .image5{
+				width: 29%;
+				float: left;
+				margin: 0.2em;
+				height:35vh;	
+			}
+		}
+	}
+	.pricing{
+		height: 40vh;
+		h2{
+			width: 20%;
+		}
+		button{
+			display: none;
+		}
+		table{
+			display: block;
+			padding-top:1em;
+			border-collapse: collapse;
+			margin: 0 auto;
+			width: 50%;
+			thead{
+				background:$darkblue;
+				width: 1em;
+				.line{
+					border-right: 1px dashed $lightest;
+				}
+			}
+			tbody{
+				border: 1px solid $lightest;
+				td{
+					padding: 0.5em;
+					text-align: center;
+					border-right: 1px solid $lightest;
+				}
+				.dark{
+					background:$darkblue;
+					
+				}
+			}
+		}
+	}
+	.contact{
+		h2{
+			width: 20%;
+		}
+		form{
+			width: 50%;
+			input{
+				width: 49%;
+				float: left;
+
+			}
+			textarea{
+				width: 99%;
+			}
+		}
+	}
+	.location{
+		height:70vh;
+		h2{
+			width: 20%;
+		}
+		iframe{
+			width: 30%;
+			float: right;
+			padding-right: 2em;
+		}
+		.info{
+			width: 40%;
+			float: left;
+			padding-top: 1em;
+		}
+	}
+}
+@mixin big{
+	.projects{
+		height: 50vh;
+
+			h2{
+				width: 20%;
+				}
+			.view{
+				height: 80vh;
+				padding: 0.5em;
+				margin: 4em auto;
+				width: 70%;
+			
+			.image1, .image2, .image3, .image4, .image5{
+				width: 15%;
+				height:20vh;	
+			}
+		}
+	}
+	.pricing{
+		table{
+		width: 80;
+		}
+	}
+	.contact{
+		height: 40vh;
+		form{
+			width:40%;
+
+		}
+	}
+}

@@ -1,0 +1,165 @@
+@import "mixins";
+@import "vars";
+
+@include main;
+@include heading;
+nav{
+	background: $blue;
+	ul{
+		.first{
+			padding: 0.5em;
+		}
+		li{
+			border-bottom: 1px solid $lightest;
+			text-align: center;
+			text-transform: uppercase;
+			@include hover-effect;
+			a{
+				text-decoration: none;
+				color: $lightest;
+			}
+		}
+	}
+}
+section{
+	height: 30vh;
+	background: $blue;
+
+	.main{
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 2em;
+		
+		span{
+			color: $lightblue;
+			font-family: $heading_font;
+			font-weight: normal;
+		}
+		h1{
+			font-size: 2em;
+		}
+		p{
+			font-size: 0.7em;
+			color: $lightblue;
+		}
+	}
+}
+.projects{
+	background: $darkblue;
+	height: 140vh;
+	padding-top: 1.5em;
+	h2{
+		background: $blue;
+		width: 80%;
+		float: right;
+		padding: 0.3em 1.5em;
+		
+	}
+	.image1, .image2, .image3, .image4, .image5{
+		height: 22vh;
+		background-size: cover;
+		margin: 0.5em auto;
+		width: 80%;
+	}
+	.image1{
+		background-image: url("../slike/home_exchange.png");
+		margin-top: 5em;
+	}
+	.image2{
+		background-image: url("../slike/agency.png");
+	}
+	.image3{
+		background-image: url("../slike/pharmacy.png");
+	}
+	.image4{
+		background-image: url("../slike/mega_rent.png");
+	}
+	.image5{
+		background-image: url("../slike/music_shop.png");
+	}
+}
+.pricing{
+	background: $blue;
+	padding-top: 1.5em;
+	h2{
+		background: $darkblue;
+		width: 80%;
+		padding: 0.3em 1.5em;
+		text-align: right;
+	}
+	button{
+		background: $darkblue;
+		border: none;
+		padding: 0.5em;;
+		margin-top: 1em;
+		font-family: $heading_font;
+		font-weight: normal;
+		font-size: 1.5em;
+		margin-left: 35%;
+		@include button-hover;
+	}
+	table{
+		display: none;
+	}
+}
+.contact{
+	background:$darkblue;
+	padding-top: 1em;
+	height: 50vh;
+	h2{
+		background: $blue;
+		width: 80%;
+		float: right;
+		padding: 0.3em 1.5em;
+
+	}
+	form{
+		margin: 5em auto;
+		width: 80%;
+		padding: 0.5em;
+		background: $blue;
+		border-radius: 4px;
+
+		input, textarea{
+			width: 100%;
+			margin: 0.2em;
+			resize: none;
+		}
+	}
+}
+.location{
+	background: $blue;
+	padding-top: 1.5em;
+	height: 120vh;
+
+	h2{
+		background: $darkblue;
+		width: 80%;
+		padding: 0.3em 1.5em;
+		text-align: right;
+	}
+	iframe{
+		width: 60%;
+		margin-top: 2em;
+		margin-left: 20%;
+	}
+	.info{
+		width: 70%;
+		text-align: justify;
+		margin-left: 10%;
+	}
+	.arrow{
+		margin-left: 10%;
+		padding: 1em 0;
+		.last{
+			@include last-hover;
+		}	
+	}
+}
+@media screen and (min-width: 700px){
+	@include medium;
+}
+@media screen and (min-width: 1200px){
+	@include big;
+}

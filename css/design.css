@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #EBF7FD; }
+
+h1, h2, h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: normal; }
+
+h2, h3 {
+  text-transform: uppercase; }
+
+nav {
+  background: #36506C; }
+  nav ul .first {
+    padding: 0.5em; }
+  nav ul li {
+    border-bottom: 1px solid #EBF7FD;
+    text-align: center;
+    text-transform: uppercase; }
+    nav ul li:hover {
+      background: #121921; }
+    nav ul li a {
+      text-decoration: none;
+      color: #EBF7FD; }
+
+section {
+  height: 30vh;
+  background: #36506C; }
+  section .main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em; }
+    section .main span {
+      color: #A5DEF1;
+      font-family: "Anton", sans-serif;
+      font-weight: normal; }
+    section .main h1 {
+      font-size: 2em; }
+    section .main p {
+      font-size: 0.7em;
+      color: #A5DEF1; }
+
+.projects {
+  background: #121921;
+  height: 140vh;
+  padding-top: 1.5em; }
+  .projects h2 {
+    background: #36506C;
+    width: 80%;
+    float: right;
+    padding: 0.3em 1.5em; }
+  .projects .image1, .projects .image2, .projects .image3, .projects .image4, .projects .image5 {
+    height: 22vh;
+    background-size: cover;
+    margin: 0.5em auto;
+    width: 80%; }
+  .projects .image1 {
+    background-image: url("../slike/home_exchange.png");
+    margin-top: 5em; }
+  .projects .image2 {
+    background-image: url("../slike/agency.png"); }
+  .projects .image3 {
+    background-image: url("../slike/pharmacy.png"); }
+  .projects .image4 {
+    background-image: url("../slike/mega_rent.png"); }
+  .projects .image5 {
+    background-image: url("../slike/music_shop.png"); }
+
+.pricing {
+  background: #36506C;
+  padding-top: 1.5em; }
+  .pricing h2 {
+    background: #121921;
+    width: 80%;
+    padding: 0.3em 1.5em;
+    text-align: right; }
+  .pricing button {
+    background: #121921;
+    border: none;
+    padding: 0.5em;
+    margin-top: 1em;
+    font-family: "Anton", sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-left: 35%; }
+    .pricing button:hover {
+      background: #EBF7FD;
+      color: #121921; }
+  .pricing table {
+    display: none; }
+
+.contact {
+  background: #121921;
+  padding-top: 1em;
+  height: 50vh; }
+  .contact h2 {
+    background: #36506C;
+    width: 80%;
+    float: right;
+    padding: 0.3em 1.5em; }
+  .contact form {
+    margin: 5em auto;
+    width: 80%;
+    padding: 0.5em;
+    background: #36506C;
+    border-radius: 4px; }
+    .contact form input, .contact form textarea {
+      width: 100%;
+      margin: 0.2em;
+      resize: none; }
+
+.location {
+  background: #36506C;
+  padding-top: 1.5em;
+  height: 120vh; }
+  .location h2 {
+    background: #121921;
+    width: 80%;
+    padding: 0.3em 1.5em;
+    text-align: right; }
+  .location iframe {
+    width: 60%;
+    margin-top: 2em;
+    margin-left: 20%; }
+  .location .info {
+    width: 70%;
+    text-align: justify;
+    margin-left: 10%; }
+  .location .arrow {
+    margin-left: 10%;
+    padding: 1em 0; }
+    .location .arrow .last:hover {
+      color: #121921; }
+
+@media screen and (min-width: 700px) {
+  nav {
+    width: 25%;
+    float: left;
+    height: 60vh; }
+    nav .first {
+      font-size: 3em;
+      color: #36506C; }
+    nav li {
+      padding: 0.2em 0; }
+
+  .imagebig {
+    height: 60vh;
+    background-image: url("../slike/main_background.jpeg");
+    background-size: cover; }
+    .imagebig .main {
+      width: 100%; }
+      .imagebig .main h1 {
+        padding-top: 7%;
+        padding-left: 45%; }
+      .imagebig .main p {
+        padding-left: 52%; }
+
+  .projects {
+    height: 95vh; }
+    .projects h2 {
+      width: 20%; }
+    .projects .view {
+      height: 80vh;
+      padding: 0.5em;
+      margin: 4em; }
+      .projects .view .image1, .projects .view .image2, .projects .view .image3, .projects .view .image4, .projects .view .image5 {
+        width: 29%;
+        float: left;
+        margin: 0.2em;
+        height: 35vh; }
+
+  .pricing {
+    height: 40vh; }
+    .pricing h2 {
+      width: 20%; }
+    .pricing button {
+      display: none; }
+    .pricing table {
+      display: block;
+      padding-top: 1em;
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 50%; }
+      .pricing table thead {
+        background: #121921;
+        width: 1em; }
+        .pricing table thead .line {
+          border-right: 1px dashed #EBF7FD; }
+      .pricing table tbody {
+        border: 1px solid #EBF7FD; }
+        .pricing table tbody td {
+          padding: 0.5em;
+          text-align: center;
+          border-right: 1px solid #EBF7FD; }
+        .pricing table tbody .dark {
+          background: #121921; }
+
+  .contact h2 {
+    width: 20%; }
+  .contact form {
+    width: 50%; }
+    .contact form input {
+      width: 49%;
+      float: left; }
+    .contact form textarea {
+      width: 99%; }
+
+  .location {
+    height: 70vh; }
+    .location h2 {
+      width: 20%; }
+    .location iframe {
+      width: 30%;
+      float: right;
+      padding-right: 2em; }
+    .location .info {
+      width: 40%;
+      float: left;
+      padding-top: 1em; } }
+@media screen and (min-width: 1200px) {
+  .projects {
+    height: 50vh; }
+    .projects h2 {
+      width: 20%; }
+    .projects .view {
+      height: 80vh;
+      padding: 0.5em;
+      margin: 4em auto;
+      width: 70%; }
+      .projects .view .image1, .projects .view .image2, .projects .view .image3, .projects .view .image4, .projects .view .image5 {
+        width: 15%;
+        height: 20vh; }
+
+  .pricing table {
+    width: 80; }
+
+  .contact {
+    height: 40vh; }
+    .contact form {
+      width: 40%; } }
+
+/*# sourceMappingURL=design.css.map */
